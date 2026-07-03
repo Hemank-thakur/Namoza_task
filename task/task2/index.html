@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Get an Expert Orthopaedic Opinion | OrthoNow Clinic</title>
+  <meta name="description" content="Get an expert orthopaedic opinion for knee and back pain from board-certified specialists at OrthoNow. 9 convenient locations with priority scheduling.">
+  <meta name="keywords" content="orthopaedic opinion, knee pain specialist, back pain doctor, OrthoNow, orthopedic clinic, knee evaluation, back care">
+  <link rel="canonical" href="https://www.orthonowclinics.com/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Get an Expert Orthopaedic Opinion | OrthoNow Clinic">
+  <meta property="og:description" content="Get evaluated by board-certified orthopaedists for knee and back pain. 9 clinic locations with priority booking.">
+  <meta property="og:url" content="https://www.orthonowclinics.com/">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Get an Expert Orthopaedic Opinion | OrthoNow Clinic">
+  <meta name="twitter:description" content="Get evaluated by board-certified orthopaedists for knee and back pain. 9 clinic locations with priority booking.">
+
+  <!-- JSON-LD Structured Data for MedicalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "OrthoNow Clinics",
+    "description": "Provider of expert orthopaedic opinions and treatment for knee and back pain.",
+    "telephone": "1-800-555-0199",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Downtown",
+      "addressRegion": "Metro Area",
+      "addressCountry": "US"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "10325"
+    }
+  }
+  </script>
+
+  <style>
+    /* -------------------------------------------------------------
+       DESIGN SYSTEM & CSS VARIABLES
+       ------------------------------------------------------------- */
+    :root {
+      --primary: #0f172a;       /* Dark slate for high trust */
+      --brand: #0b57d0;         /* Accessible Google Blue (contrast ratio >= 4.5:1 with white text) */
+      --brand-hover: #0842a0;   /* Darker blue for active states */
+      --brand-light: #f0f9ff;   /* Light background tint */
+      --accent: #d97706;        /* Darker gold for accessible star contrast */
+      --text: #1e293b;          /* Highly readable grey/black for body text */
+      --text-dark: #0f172a;     /* Bold headings color */
+      --text-light: #475569;    /* Darkened slate for WCAG AA standard contrast */
+      --bg: #ffffff;            /* Base background */
+      --bg-alt: #f8fafc;        /* Alternate section background */
+      --border: #cbd5e1;        /* Accessible border divider contrast */
+      --success: #15803d;       /* Success green */
+      --error: #b91c1c;         /* Error red */
+      --radius: 8px;            /* Standard rounding */
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    /* -------------------------------------------------------------
+       BASE STYLES (No Google Fonts Connection - Renders Instantly)
+       ------------------------------------------------------------- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background-color: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3 {
+      color: var(--text-dark);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--brand-hover);
+    }
+
+    /* Accessibility focus styling */
+    input:focus-visible, button:focus-visible {
+      outline: 3px solid var(--brand);
+      outline-offset: 2px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* -------------------------------------------------------------
+       HEADER SECTION
+       ------------------------------------------------------------- */
+    header {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .logo span {
+      color: var(--brand);
+    }
+
+    .header-contact {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    /* -------------------------------------------------------------
+       HERO & FORM SECTION
+       ------------------------------------------------------------- */
+    .hero {
+      padding: 48px 0;
+      background: radial-gradient(circle at 100% 0%, var(--brand-light) 0%, var(--bg) 60%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      align-self: flex-start;
+      background: var(--brand-light);
+      color: var(--brand);
+      padding: 6px 12px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p.subheadline {
+      font-size: 17px;
+      color: var(--text-light);
+      max-width: 600px;
+    }
+
+    /* Trust Stats Grid */
+    .trust-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .stat-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 16px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .stat-number {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--brand);
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--text-light);
+      font-weight: 500;
+      margin-top: 4px;
+    }
+
+    .rating-stars {
+      color: var(--accent);
+      font-size: 14px;
+    }
+
+    /* Lead Capture Form Styling */
+    .lead-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .lead-box-header {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .lead-box-header h2 {
+      font-size: 20px;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .lead-box-header p {
+      font-size: 13px;
+      color: var(--text-light);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+    }
+
+    .form-group input {
+      width: 100%;
+      min-height: 48px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 15px;
+      font-family: inherit;
+      color: var(--text-dark);
+      background-color: var(--bg);
+    }
+
+    .form-group input::placeholder {
+      color: #94a3b8;
+    }
+
+    .form-group input:focus {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px rgba(11, 87, 208, 0.15);
+      outline: none;
+    }
+
+    /* Form Feedback Styling */
+    .form-error {
+      display: none;
+      font-size: 12px;
+      color: var(--error);
+      margin-top: 4px;
+    }
+
+    .cta-button {
+      width: 100%;
+      min-height: 48px;
+      background: var(--brand);
+      color: #ffffff;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cta-button:hover {
+      background: var(--brand-hover);
+    }
+
+    .cta-button:disabled {
+      background: var(--text-light);
+      cursor: not-allowed;
+    }
+
+    .form-disclaimer {
+      font-size: 11px;
+      color: var(--text-light);
+      text-align: center;
+      margin-top: 12px;
+      line-height: 1.4;
+    }
+
+    /* Success State Container */
+    .success-container {
+      display: none;
+      text-align: center;
+      padding: 16px 0;
+    }
+
+    .success-icon {
+      width: 56px;
+      height: 56px;
+      background: #dcfce7;
+      color: var(--success);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 16px;
+      font-weight: bold;
+    }
+
+    .success-title {
+      font-size: 20px;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .success-msg {
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    /* -------------------------------------------------------------
+       PAIN POINTS SECTION
+       ------------------------------------------------------------- */
+    .pain-points {
+      padding: 48px 0;
+      background: var(--bg-alt);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      color: var(--text-light);
+      font-size: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .pain-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 32px;
+      display: flex;
+      gap: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .pain-icon-wrapper {
+      width: 48px;
+      height: 48px;
+      background: var(--brand-light);
+      color: var(--brand);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+      font-weight: bold;
+    }
+
+    .pain-card-content h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: var(--text-dark);
+    }
+
+    .pain-card-content p {
+      font-size: 14px;
+      color: var(--text-light);
+      margin-bottom: 16px;
+    }
+
+    .pain-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .pain-features li {
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text);
+    }
+
+    .pain-features li::before {
+      content: "✓";
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    /* -------------------------------------------------------------
+       FOOTER SECTION
+       ------------------------------------------------------------- */
+    footer {
+      background: var(--primary);
+      color: #94a3b8;
+      padding: 48px 0;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    footer .container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 32px;
+    }
+
+    .footer-title {
+      color: #ffffff;
+      font-size: 14px;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .footer-title span {
+      color: var(--brand);
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-col ul a {
+      color: #94a3b8;
+    }
+
+    .footer-col ul a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #334155;
+      padding-top: 24px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* -------------------------------------------------------------
+       RESPONSIVE STYLES (MOBILE & TABLET)
+       ------------------------------------------------------------- */
+    @media (max-width: 968px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      
+      .hero {
+        padding: 32px 0;
+      }
+      
+      .hero h1 {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .pain-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .trust-stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      
+      .lead-box {
+        padding: 24px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        Ortho<span>Now</span>
+      </div>
+      <div class="header-contact">
+        Call for Priority Booking: <a href="tel:1-800-555-0199">1-800-555-0199</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN HERO SECTION -->
+  <main>
+    <section class="hero" id="opinion-form">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Copywriting Panel -->
+          <div class="hero-content">
+            <span class="badge">Specialist Opinion</span>
+            <h1>Get an Expert Orthopaedic Opinion This Week</h1>
+            <p class="subheadline">
+              Busy schedules shouldn't define your physical limits. If knee or back pain is restricting your workday, workouts, or family time, get evaluated by board-certified orthopaedists.
+            </p>
+            
+            <!-- Trust Badges & Metrics -->
+            <div class="trust-stats">
+              <div class="stat-card">
+                <span class="stat-number">4.9★</span>
+                <div class="rating-stars">★★★★★</div>
+                <div class="stat-label">Patient Rating</div>
+              </div>
+              
+              <div class="stat-card">
+                <span class="stat-number">9</span>
+                <div class="stat-label">Clinic Locations</div>
+              </div>
+              
+              <div class="stat-card">
+                <span class="stat-number">24hr</span>
+                <div class="stat-label">Response Time</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conversion Form Panel -->
+          <div class="lead-box">
+            
+            <!-- Default State (Active Form) -->
+            <div id="form-state-active">
+              <div class="lead-box-header">
+                <h2>Fast-Track Appointment</h2>
+                <p>Enter details below to claim a priority consult slot</p>
+              </div>
+              
+              <form id="landing-lead-form" novalidate>
+                
+                <!-- Name Input -->
+                <div class="form-group">
+                  <label for="user-name">Your Full Name</label>
+                  <input 
+                    type="text" 
+                    id="user-name" 
+                    name="user_name" 
+                    placeholder="e.g., John Doe" 
+                    autocomplete="name" 
+                    required
+                    minlength="2"
+                    maxlength="50"
+                    pattern="^[a-zA-Z\s\-']+$"
+                  >
+                  <div class="form-error" id="name-error" aria-live="polite">Please enter a valid full name (letters only).</div>
+                </div>
+
+                <!-- Phone Input -->
+                <div class="form-group">
+                  <label for="user-phone">Phone Number</label>
+                  <input 
+                    type="tel" 
+                    id="user-phone" 
+                    name="user_phone" 
+                    placeholder="e.g., 555-0199" 
+                    autocomplete="tel" 
+                    inputmode="tel"
+                    required
+                    pattern="^\+?[0-9\s\-()]{7,20}$"
+                  >
+                  <div class="form-error" id="phone-error" aria-live="polite">Please enter a valid phone number (minimum 7 digits).</div>
+                </div>
+
+                <!-- CTA Button -->
+                <button type="submit" class="cta-button" id="submit-btn">
+                  Request Priority Call Back
+                </button>
+                
+                <p class="form-disclaimer">
+                  We value your privacy. By submitting, you agree to receive a call back at the number provided. No marketing lists, ever.
+                </p>
+              </form>
+            </div>
+
+            <!-- Success/Confirmation State -->
+            <div id="form-state-success" class="success-container">
+              <div class="success-icon">✓</div>
+              <h3 class="success-title">Priority Callback Requested</h3>
+              <p class="success-msg">
+                Thank you! Our patient coordinator will call you back within 2 business hours to schedule your expert orthopaedic opinion.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PAIN POINT SOLUTIONS SECTION (Knee & Back focus for Working Professionals) -->
+    <section class="pain-points">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2>Expert Diagnostics Tailored to Your Recovery</h2>
+          <p>Don't just ignore the ache. Whether it's desk posture stiffness or active joints fatigue, we provide solutions that get you back on your feet quickly.</p>
+        </div>
+
+        <div class="pain-grid">
+          
+          <!-- Knee Pain Column -->
+          <article class="pain-card">
+            <div class="pain-icon-wrapper" aria-hidden="true">K</div>
+            <div class="pain-card-content">
+              <h3>Knee & Joint Evaluation</h3>
+              <p>From meniscus issues to arthritis assessments, we diagnose the core issue using high-resolution imaging and physical movement diagnostics.</p>
+              <ul class="pain-features">
+                <li>Comprehensive joint stability testing</li>
+                <li>Non-invasive treatment paths preferred</li>
+                <li>Fast return-to-sport therapy planning</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Back Pain Column -->
+          <article class="pain-card">
+            <div class="pain-icon-wrapper" aria-hidden="true">B</div>
+            <div class="pain-card-content">
+              <h3>Spine & Lower Back Care</h3>
+              <p>Combat desk-bound sciatica, disc pain, or chronic posture-related aches. Our team helps restore structural alignment and core mobility.</p>
+              <ul class="pain-features">
+                <li>Ergonomic posture analysis</li>
+                <li>Targeted physical therapy regimens</li>
+                <li>Advanced spinal care specialist access</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-col">
+          <h3 class="footer-title">Ortho<span>Now</span></h3>
+          <p>OrthoNow provides premium, specialized orthopaedic care. Our goal is to offer fast-track evaluations and treatment options to restore mobility and lifestyle.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul>
+            <li><a href="#opinion-form">Get Opinion Form</a></li>
+            <li><a href="tel:1-800-555-0199">Priority Contact Line</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Locations Covered</h3>
+          <p>9 regional diagnostic clinics with walk-in appointments. Contact our central booking center for directions to your closest clinic.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 OrthoNow Clinics Group. All rights reserved.</div>
+        <div>Medical Disclaimer: Opinions expressed are for educational purposes. For immediate emergencies, please visit an ER clinic.</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- VANILLA JAVASCRIPT FOR FORMS AND GTM EVENT SIMULATION -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('landing-lead-form');
+      const submitBtn = document.getElementById('submit-btn');
+      
+      const nameInput = document.getElementById('user-name');
+      const phoneInput = document.getElementById('user-phone');
+      
+      const nameError = document.getElementById('name-error');
+      const phoneError = document.getElementById('phone-error');
+      
+      const activeState = document.getElementById('form-state-active');
+      const successState = document.getElementById('form-state-success');
+
+      // Helper function: check valid name
+      function validateName() {
+        const regex = /^[a-zA-Z\s\-']+$/;
+        const value = nameInput.value.trim();
+        if (value.length < 2 || value.length > 50 || !regex.test(value)) {
+          nameInput.style.borderColor = 'var(--error)';
+          nameError.style.display = 'block';
+          return false;
+        } else {
+          nameInput.style.borderColor = 'var(--border)';
+          nameError.style.display = 'none';
+          return true;
+        }
+      }
+
+      // Helper function: check valid phone
+      function validatePhone() {
+        const regex = /^\+?[0-9\s\-()]{7,20}$/;
+        const value = phoneInput.value.trim();
+        if (!regex.test(value)) {
+          phoneInput.style.borderColor = 'var(--error)';
+          phoneError.style.display = 'block';
+          return false;
+        } else {
+          phoneInput.style.borderColor = 'var(--border)';
+          phoneError.style.display = 'none';
+          return true;
+        }
+      }
+
+      // Input events to clear warning status while typing (non-intrusive style guide rule)
+      nameInput.addEventListener('input', () => {
+        if (nameInput.style.borderColor === 'var(--error)') {
+          nameInput.style.borderColor = 'var(--border)';
+          nameError.style.display = 'none';
+        }
+      });
+
+      phoneInput.addEventListener('input', () => {
+        if (phoneInput.style.borderColor === 'var(--error)') {
+          phoneInput.style.borderColor = 'var(--border)';
+          phoneError.style.display = 'none';
+        }
+      });
+
+      // Blur validation (exiting fields triggers formal validation check)
+      nameInput.addEventListener('blur', validateName);
+      phoneInput.addEventListener('blur', validatePhone);
+
+      // Handle submission
+      form.addEventListener('submit', (e) => {
+        e.preventDefault(); // Prevent native redirect
+
+        // Execute validations
+        const isNameValid = validateName();
+        const isPhoneValid = validatePhone();
+
+        if (isNameValid && isPhoneValid) {
+          // Disable button immediately to prevent double submissions
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Submitting Request...';
+
+          // Simulate GTM dataLayer conversion events
+          window.dataLayer = window.dataLayer || [];
+          
+          // Parse UTM parameters for marketing attribution
+          const urlParams = new URLSearchParams(window.location.search);
+          const utmSource = urlParams.get('utm_source') || 'direct';
+          const utmCampaign = urlParams.get('utm_campaign') || 'expert_opinion';
+
+          // Custom Conversion Event Push
+          window.dataLayer.push({
+            event: 'consultation_form_submitted',
+            name: nameInput.value.trim(),
+            phone_length: phoneInput.value.trim().length,
+            source: utmSource,
+            campaign: utmCampaign
+          });
+
+          // Transition states and show success screen after short delay
+          setTimeout(() => {
+            activeState.style.display = 'none';
+            successState.style.display = 'block';
+          }, 800);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
